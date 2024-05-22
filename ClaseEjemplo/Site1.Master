@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ClaseEjemplo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <style type="text/css">
+.button {
+background-color: white; /* Green */
+border: 1px solid green;
+color: lightblue;
+padding: 12px 26px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+font-family:'Century Gothic';
+cursor: pointer;
+float: left;
+border-style:hidden
+}
+.button:hover {
+background-color: #28D1D8;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <table style="width: 100%; background-color: #009999; color: #FFFFFF;"> 
+            <tr>
+                <td colspan="5">
+                    Grupo Meyer</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Inicio" cssclass="button" />
+                </td>
+                <td>
+                    <asp:Button ID="Button2" runat="server" Text="Productos" cssclass="button" OnClick="Button2_Click" />
+                </td>
+                <td>
+                    <asp:Button ID="Button3" runat="server" Text="Clientes" cssclass="button" OnClick="Button3_Click" />
+                </td>
+                <td>
+                    <asp:Button ID="Button4" runat="server" Text="Ventas" cssclass="button" OnClick="Button4_Click" />
+                </td>
+                <td>
+                    <asp:Button ID="Button5" runat="server" Text="Facturas" cssclass="button" OnClick="Button5_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
